@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> <div class="area-busca">
+      <input type="text" id="campo-busca" placeholder="Buscar produto...">
+      <button id="botao-busca">Buscar</button>
+    </div>
+
+    <button id="botao-carrinho">
+      Carrinho (<span id="quantidade-carrinho">0</span>)
+    </button>
+</header>
+
+  <main>
+    <h2 id="titulo-lista">Todas as viagens</h2>
+    
+    <div id="lista-produtos" class="lista-produtos" img src="caneca"></div>
+    <p id="mensagem-vazia" class="escondido">Nenhum produto encontrado.</p>
+  </main>
+
+  <aside id="carrinho" class="escondido">
+    <h2>Meu carrinho</h2>
+
+    <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+    <ul id="itens-carrinho"></ul>
+
+    <p class="total">Total: <span id="valor-total">R$ 0,00</span></p>
+
+    <button id="botao-finalizar">Finalizar compra</button>
+    <button id="botao-fechar" class="botao-secundario">Continuar comprando</button>
+  </aside>
+
+  <footer>
+    <p>Projeto de estudo - loja feita com HTML, CSS e JavaScript</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
