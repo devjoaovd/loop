@@ -1,12 +1,12 @@
 // ---------- Lista de produtos da loja ----------
 
 var produtos = [
-  { id: 1, nome: "New York", descricao: "Viagem para a cidade de New York.\n Com duração de 10 dias.\n Passagens de ida e volta",  categoria: "viagens", preco: R$10000.00, imagem: "img/newyork.png" },
-  { id: 2, nome: "Bonito - MT", descricao: "Cidade de Bonito - MT.\n Com duração de 5 dias.\n Passagens de ida e volta", categoria: "Roupas", preco: R$59.90, imagem: "img/bonito.png" },
-  { id: 3, nome: "Bolívia", descricao: "Viagem para a cidade de Bolívia.\n Com duração de 7 dias.\n Passagens de ida e volta", categoria: "viagens", preco: R$899.90, imagem: "img/bolivia.png" },
-  { id: 4, nome: "Mochila Escolar", descricao: "mochila escolar com rodinhas", categoria: "Acessorios", preco: R$129.90, imagem: "img/mochila.jpg" },
-  { id: 5, nome: "Caderno Pautado", descricao: "caderno pautado com 100 folhas", categoria: "Papelaria", preco: R$24.50, imagem: "img/ajenda.jpg" },
-  { id: 6, nome: "Tenis Esportivo", descricao: "tenis esportivo para corrida", categoria: "Calcados", preco: R$249.90, imagem: "img/tenis.jpg" },
+  { id: 1, nome: "New York", descricao: "Viagem para a cidade de New York.\n Com duração de 10 dias.\n Passagens de ida e volta",  categoria: "viagens", preco: 10000.00, imagem: "img/newyork.png" },
+  { id: 2, nome: "Bonito - MT", descricao: "Cidade de Bonito - MT.\n Com duração de 5 dias.\n Passagens de ida e volta", categoria: "Roupas", preco: 59.90, imagem: "img/bonito.png" },
+  { id: 3, nome: "Bolívia", descricao: "Viagem para a cidade de Bolívia.\n Com duração de 7 dias.\n Passagens de ida e volta", categoria: "viagens", preco: 899.90, imagem: "img/bolivia.png" },
+  { id: 4, nome: "Mochila Escolar", descricao: "mochila escolar com rodinhas", categoria: "Acessorios", preco: 129.90, imagem: "img/mochila.jpg" },
+  { id: 5, nome: "Caderno Pautado", descricao: "caderno pautado com 100 folhas", categoria: "Papelaria", preco: 24.50, imagem: "img/ajenda.jpg" },
+  { id: 6, nome: "Tenis Esportivo", descricao: "tenis esportivo para corrida", categoria: "Calcados", preco: 249.90, imagem: "img/tenis.jpg" },
   { id: 7, nome: "Garrafa Termica", categoria: "Cozinha", preco: 89.0, imagem: "img/garafa.jpg" },
   { id: 8, nome: "Teclado Mecanico", categoria: "Eletronicos", preco: 319.9, imagem: "img/teclado.jpg" }
 ];
