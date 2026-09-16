@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: bc8a5f;
+  background-color: #bc8a5f;
   color: #2b2b2b;
 }
 
@@ -89,8 +89,9 @@ button:hover {
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 12px;
-  background-color: white;
+  background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .card img {
@@ -106,6 +107,7 @@ button:hover {
 }
 
 .card-info p {
+  margin: 8px 0;
   white-space: normal;
   font-size: 14px;
 }
@@ -113,6 +115,22 @@ button:hover {
 .card-info h3 {
   margin-top: 8px;
   font-size: 17px;
+}
+
+.botao-adicionar {
+  display: block;
+  margin: 10px auto 0;
+}
+
+
+/* ---------- Texto de viagens ---------- */
+
+.viagens {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 10px 0 25px;
 }
 
 
@@ -134,6 +152,7 @@ button:hover {
 #carrinho h2 {
   margin-top: 0;
   font-size: 18px;
+  text-align: center;
 }
 
 #itens-carrinho {
@@ -148,6 +167,7 @@ button:hover {
 }
 
 .item-nome {
+  display: block;
   font-size: 15px;
 }
 
@@ -197,7 +217,7 @@ button:hover {
 footer {
   padding: 24px;
   font-size: 13px;
-  color: #7a7368;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -205,23 +225,18 @@ footer {
 /* ---------- Telas menores ---------- */
 
 @media (max-width: 1000px) {
-
   .produtos {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 @media (max-width: 750px) {
-
   .produtos {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 560px) {
-
   .produtos {
     grid-template-columns: 1fr;
   }
@@ -229,5 +244,5 @@ footer {
   #carrinho {
     width: 100%;
   }
-
 }
+
