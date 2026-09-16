@@ -266,4 +266,3 @@ botaoFinalizar.addEventListener("click", function () {
 // ---------- Iniciar ----------
 
 atualizarCarrinho();
-
