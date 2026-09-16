@@ -94,17 +94,18 @@ main > h1 {
 .produtos {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 25px;
   padding: 20px;
 }
 
 .card {
   border: 1px solid #ddd;
   border-radius: 10px;
-  padding: 12px;
+  padding: 10px;
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: auto;
 }
 
 .card img {
@@ -133,129 +134,5 @@ main > h1 {
 .botao-adicionar {
   display: block;
   margin: 10px auto 0;
-}
-
-
-/* ---------- Texto de viagens ---------- */
-
-.viagens {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 10px 0 25px;
-}
-
-
-/* ---------- Carrinho ---------- */
-
-#carrinho {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 320px;
-  height: 100%;
-  padding: 24px;
-  overflow-y: auto;
-  background-color: #ffffff;
-  border-left: 1px solid #e0dcd3;
-  z-index: 10;
-}
-
-#carrinho h2 {
-  margin-top: 0;
-  font-size: 18px;
-  text-align: center;
-}
-
-#itens-carrinho {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#itens-carrinho li {
-  padding: 12px 0;
-  border-bottom: 1px solid #eeeae2;
-}
-
-.item-nome {
-  display: block;
-  font-size: 15px;
-}
-
-.item-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  margin-top: 6px;
-  font-size: 14px;
-  color: #7a7368;
-}
-
-.item-info button {
-  padding: 4px 8px;
-  font-size: 13px;
-  background-color: #e8e3d9;
-  color: #2b2b2b;
-}
-
-.total {
-  margin: 20px 0;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-#carrinho button {
-  width: 100%;
-  margin-bottom: 8px;
-}
-
-#carrinho .item-info button {
-  width: auto;
-  margin-bottom: 0;
-}
-
-
-/* ---------- Elementos escondidos ---------- */
-
-.escondido {
-  display: none;
-}
-
-
-/* ---------- Rodape ---------- */
-
-footer {
-  padding: 24px;
-  font-size: 13px;
-  color: #ffffff;
-  text-align: center;
-}
-
-
-/* ---------- Telas menores ---------- */
-
-@media (max-width: 1000px) {
-  .produtos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 750px) {
-  .produtos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 560px) {
-  .produtos {
-    grid-template-columns: 1fr;
-  }
-
-  #carrinho {
-    width: 100%;
-  }
 }
 
