@@ -1,3 +1,4 @@
+
 /* ---------- Estilo geral ---------- */
 
 * {
@@ -100,6 +101,9 @@ main > h1 {
   padding: 20px;
 }
 
+
+/* ---------- Cards ---------- */
+
 .card {
   border: 1px solid #ddd;
   border-radius: 10px;
@@ -107,7 +111,10 @@ main > h1 {
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+
+  /* Overflow de 10px */
   overflow: auto;
+  max-height: 400px;
 }
 
 .card img {
@@ -159,7 +166,10 @@ main > h1 {
   width: 320px;
   height: 100%;
   padding: 24px;
+
+  /* Overflow para permitir rolagem */
   overflow-y: auto;
+
   background-color: #ffffff;
   border-left: 1px solid #e0dcd3;
   z-index: 10;
