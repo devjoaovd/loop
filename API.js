@@ -1,15 +1,29 @@
 // ---------- Lista de produtos da loja ----------
 
 var produtos = [
-  { id: 1, nome: "New York", descricao: "Viagem para a cidade de New York.\n Com duração de 10 dias.\n Passagens de ida e volta",  categoria: "viagens", preco: 10000.00, imagem: "img/newyork.png" },
-  { id: 2, nome: "Bonito - MT", descricao: "Cidade de Bonito - MT.\n Com duração de 5 dias.\n Passagens de ida e volta", categoria: "Roupas", preco: 59.90, imagem: "img/bonito.png" },
-  { id: 3, nome: "Bolívia", descricao: "Viagem para a cidade de Bolívia.\n Com duração de 7 dias.\n Passagens de ida e volta", categoria: "viagens", preco: 899.90, imagem: "img/bolivia.png" },
-  { id: 4, nome: "Mochila Escolar", descricao: "mochila escolar com rodinhas", categoria: "Acessorios", preco: 129.90, imagem: "img/mochila.jpg" },
-  { id: 5, nome: "Caderno Pautado", descricao: "caderno pautado com 100 folhas", categoria: "Papelaria", preco: 24.50, imagem: "img/ajenda.jpg" },
-  { id: 6, nome: "Tenis Esportivo", descricao: "tenis esportivo para corrida", categoria: "Calcados", preco: 249.90, imagem: "img/tenis.jpg" },
-  { id: 7, nome: "Garrafa Termica", categoria: "Cozinha", preco: 89.0, imagem: "img/garafa.jpg" },
-  { id: 8, nome: "Teclado Mecanico", categoria: "Eletronicos", preco: 319.9, imagem: "img/teclado.jpg" }
+  { id: 1, nome: "New York", descricao: "Viagem para a cidade de New York - EUA.\n Com duração de 10 dias.\n Passagens de ida e volta.",  categoria: "viagens", preco: 5500.00, imagem: "img/newyork.png" },
+  { id: 2, nome: "Bonito - MT", descricao: "Viagem para a cidade de Bonito - MT.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "Roupas", preco: 1559.90, imagem: "img/bonito.png" },
+  { id: 3, nome: "Bolívia", descricao: "Viagem para o país de Bolívia.\n Com duração de 7 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 1899.90, imagem: "img/bolivia.png" },
+  { id: 4, nome: "Canada", descricao: "Viagem para o país de Canada.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 4499.99, imagem: "img/canada.png" },
+  { id: 5, nome: "Egito", descricao: "Viagem para o país de Egito.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 6999.90, imagem: "img/egito.png" },
+  { id: 6, nome: "Holanda", descricao: "Viagem para o país de Holanda.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 6249.90, imagem: "img/holanda.png" },
+  { id: 7, nome: "Ilhas Maldivas", descricao: "Viagem para as ilhas Maldivas.\n Com duração de 7 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 8999.90, imagem: "img/maldivas.png" },
+  { id: 8, nome: "Paris", descricao: "Viagem para a cidade de Paris.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 5999.90, imagem: "img/paris.png" },
+  { id: 9, nome: "Suíça", descricao: "Viagem para a cidade de Suíça.\n Com duração de 5 dias.\n Passagens de ida e volta.", categoria: "viagens", preco: 6897.90, imagem: "img/suica.png" }
 ];
+
+const container = document.getElementById("produtos");
+
+produtos.forEach(produto => {     //O forEach() serve para passar por cada item de uma lista (array), um por um, e executar um código para cada item.//
+    container.innerHTML += `
+        <div class="card">
+            <img src="${produto.imagem}" alt="${produto.nome}">
+            <h2>${produto.nome}</h2>
+            <p>${produto.descricao}</p>
+            <p>R$ ${produto.preco}</p>
+        </div>
+    `;
+});
 
 // ---------- Carrinho comeca vazio ----------
 
