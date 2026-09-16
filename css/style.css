@@ -76,6 +76,19 @@ button:hover {
 }
 
 
+/* ---------- Titulos principais ---------- */
+
+main > h1 {
+  color: #ffffff;
+  text-align: center;
+}
+
+#titulo-lista {
+  color: #ffffff;
+  text-align: center;
+}
+
+
 /* ---------- Lista de produtos ---------- */
 
 .produtos {
