@@ -14,13 +14,16 @@ var produtos = [
 
 const container = document.getElementById("produtos");
 
-produtos.forEach(produto => {     //O forEach() serve para passar por cada item de uma lista (array), um por um, e executar um código para cada item.//
+produtos.forEach(produto => {
     container.innerHTML += `
         <div class="card">
             <img src="${produto.imagem}" alt="${produto.nome}">
-            <h2>${produto.nome}</h2>
-            <p>${produto.descricao}</p>
-            <p>R$ ${produto.preco}</p>
+            
+            <div class="card-info">
+                <h2>${produto.nome}</h2>
+                <p>${produto.descricao.replace(/\n/g, "<br>")}</p>
+                <h3>R$ ${produto.preco.toFixed(2)}</h3>
+            </div>
         </div>
     `;
 });
