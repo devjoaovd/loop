@@ -251,12 +251,7 @@ function finalizarCompra() {
 botaoBusca.addEventListener("click", buscarProdutos);
 campoBusca.addEventListener("input", buscarProdutos);
 
-botaoadicionarCarrinho = document.querySelectorAll(".produto button");
-for (var i = 0; i < botaoadicionarCarrinho.length; i++) {
-  botaoadicionarCarrinho[i].addEventListener("click", function () {
-    adicionarAoCarrinho(Number(this.dataset.id));
-  });
-}
+adicionarAoCarrinho(1); // Adiciona o produto com id 1 ao carrinho
 
 botaoCarrinho.addEventListener("click", function () {
   painelCarrinho.classList.remove("escondido");
