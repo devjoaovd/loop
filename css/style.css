@@ -96,10 +96,7 @@ button:hover {
 .card img {
   width: 100%;
   height: 200px;
-
-  /* Mantém a imagem inteira sem deformar */
   object-fit: contain;
-
   border-radius: 8px;
 }
 
@@ -128,6 +125,7 @@ button:hover {
   overflow-y: auto;
   background-color: #ffffff;
   border-left: 1px solid #e0dcd3;
+  z-index: 10;
 }
 
 #carrinho h2 {
@@ -154,6 +152,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   margin-top: 6px;
   font-size: 14px;
   color: #7a7368;
@@ -183,6 +182,13 @@ button:hover {
 }
 
 
+/* ---------- Elementos escondidos ---------- */
+
+.escondido {
+  display: none;
+}
+
+
 /* ---------- Rodape ---------- */
 
 footer {
@@ -190,13 +196,6 @@ footer {
   font-size: 13px;
   color: #7a7368;
   text-align: center;
-}
-
-
-/* ---------- Elementos escondidos ---------- */
-
-.escondido {
-  display: none;
 }
 
 
