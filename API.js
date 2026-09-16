@@ -251,6 +251,13 @@ function finalizarCompra() {
 botaoBusca.addEventListener("click", buscarProdutos);
 campoBusca.addEventListener("input", buscarProdutos);
 
+botaoadicionarCarrinho = document.querySelectorAll(".produto button");
+for (var i = 0; i < botaoadicionarCarrinho.length; i++) {
+  botaoadicionarCarrinho[i].addEventListener("click", function () {
+    adicionarAoCarrinho(Number(this.dataset.id));
+  });
+}
+
 botaoCarrinho.addEventListener("click", function () {
   painelCarrinho.classList.remove("escondido");
 });
