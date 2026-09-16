@@ -1,59 +1,122 @@
- <!DOCTYPE html>
- <html lang="pt-BR">
- <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
-    <title>loop</title>
- </head>
- <body>
-    
- </body>
- </html>
- <div class="area-busca">
-      <input type="text" id="campo-busca" placeholder="Buscar produto...">
-      <button id="botao-busca">Buscar</button>
-    </div>
 
-    <button id="botao-carrinho">
-      Carrinho (<span id="quantidade-carrinho">0</span>)
-    </button>
-  </header>
+    <title>Looop Ltda!</title>
+</head>
 
-  <main>
-    <h1>Bem vindos, abordo da Looop Ltda!</h1>
-    <h2 id="titulo-lista">Todos as viagens</h2>
-    
-    <div id="produtos">
-      <img src="img/newyork.png">
-      <img src="img/bonito.png">
-      <img src="img/bolivia.png">
-      <img src="img/canada.png">
-      <img src="img/holanda.png">
-      <img src="img/maldivas.png">
-      <img src="img/paris.png">
-      <img src="img/suica.png">
-    </div>  
-    
-    <p id="produtos" class= "viagens"> confira nossas viagens!</p>
-  </main>
+<body>
 
-  <aside id="carrinho" class="escondido">
-    <h2>Meu carrinho</h2>
+    <!-- ---------- Cabeçalho ---------- -->
 
-    <p id="carrinho-vazio">Seu carrinho está vazio.</p>
-    <ul id="itens-carrinho"></ul>
+    <header>
 
-    <p class="total">Total: <span id="valor-total">R$ 0,00</span></p>
+        <h1 class="logo">Looop Ltda!</h1>
 
-    <button id="botao-finalizar">Finalizar compra</button>
-    <button id="botao-fechar" class="botao-secundario">Continuar comprando</button>
-  </aside>
+        <div class="area-busca">
 
-  <footer>
-    <p>Projeto de estudo - loja feita com HTML, CSS e JavaScript</p>
-  </footer>
+            <input
+                type="text"
+                id="campo-busca"
+                placeholder="Buscar produto..."
+            >
 
-  <script src="js/script.js"></script>
+            <button id="botao-busca">
+                Buscar
+            </button>
+
+        </div>
+
+        <button id="botao-carrinho">
+            Carrinho
+            (<span id="quantidade-carrinho">0</span>)
+        </button>
+
+    </header>
+
+
+    <!-- ---------- Conteúdo principal ---------- -->
+
+    <main>
+
+        <h1>
+            Bem-vindos, a bordo da Looop Ltda!
+        </h1>
+
+        <h2 id="titulo-lista">
+            Todas as viagens
+        </h2>
+
+        <!--
+            Os produtos serão criados
+            automaticamente pelo JavaScript.
+        -->
+
+        <div id="produtos" class="produtos"></div>
+
+        <p class="viagens">
+            Confira nossas viagens!
+        </p>
+
+    </main>
+
+
+    <!-- ---------- Carrinho ---------- -->
+
+    <aside id="carrinho" class="escondido">
+
+        <h2>
+            Meu carrinho
+        </h2>
+
+        <p id="carrinho-vazio">
+            Seu carrinho está vazio.
+        </p>
+
+        <ul id="itens-carrinho"></ul>
+
+        <p class="total">
+            Total:
+            <span id="valor-total">
+                R$ 0,00
+            </span>
+        </p>
+
+        <button id="botao-finalizar">
+            Finalizar compra
+        </button>
+
+        <button
+            id="botao-fechar"
+            class="botao-secundario"
+        >
+            Continuar comprando
+        </button>
+
+    </aside>
+
+
+    <!-- ---------- Rodapé ---------- -->
+
+    <footer>
+
+        <p>
+            Projeto de estudo - loja feita com HTML, CSS e JavaScript
+        </p>
+
+    </footer>
+
+
+    <!-- ---------- JavaScript ---------- -->
+
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
