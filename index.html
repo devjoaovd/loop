@@ -32,32 +32,30 @@
         </h1>
 
 
-        <!-- Barra de pesquisa -->
+         <header>
+    <h1 class="logo">Minha Loja</h1>
 
-        <div class="area-busca">
+    <div class="area-busca">
+      <input type="text" id="campo-busca" placeholder="Buscar produto...">
+      <button id="botao-busca">Buscar</button>
+    </div>
 
-            <input
-                type="text"
-                id="campo-busca"
-                placeholder="Buscar produto..."
-            >
+    <button id="botao-carrinho">
+      Carrinho (<span id="quantidade-carrinho">0</span>)
+    </button>
+  </header>
 
-            <button id="botao-busca">
-                Buscar
-            </button>
+  <aside id="carrinho" class="escondido">
+    <h2>Meu carrinho</h2>
 
-        </div>
+    <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+    <ul id="itens-carrinho"></ul>
 
+    <p class="total">Total: <span id="valor-total">R$ 0,00</span></p>
 
-        <!-- Botão do carrinho -->
-
-        <button id="botao-carrinho">
-
-            Carrinho
-            (<span id="quantidade-carrinho">0</span>)
-
-        </button>
-
+    <button id="botao-finalizar">Finalizar compra</button>
+    <button id="botao-fechar" class="botao-secundario">Continuar comprando</button>
+  </aside>
     </header>
 
 
