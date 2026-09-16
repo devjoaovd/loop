@@ -16,7 +16,7 @@ var produtos = [
     descricao: "Viagem para a cidade de Bonito - MT.",
     categoria: "viagens",
     preco: 1559.90,
-    imagem: "img/bonito.png"
+    imagem: "img/bonito-MT.png"
   },
 
   {
