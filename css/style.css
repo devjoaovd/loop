@@ -80,12 +80,14 @@ button:hover {
 
 main > h1 {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 #titulo-lista {
   color: #ffffff;
-  text-align: center;
+  text-align: left;
+  margin-left: 20px;
 }
 
 
@@ -136,3 +138,126 @@ main > h1 {
   margin: 10px auto 0;
 }
 
+
+/* ---------- Frase de viagens ---------- */
+
+.viagens {
+  color: #ffffff;
+  text-align: left;
+  margin: 10px 20px 25px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+/* ---------- Carrinho ---------- */
+
+#carrinho {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  padding: 24px;
+  overflow-y: auto;
+  background-color: #ffffff;
+  border-left: 1px solid #e0dcd3;
+  z-index: 10;
+}
+
+#carrinho h2 {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+#itens-carrinho {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#itens-carrinho li {
+  padding: 12px 0;
+  border-bottom: 1px solid #eeeae2;
+}
+
+.item-nome {
+  display: block;
+  font-size: 15px;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 14px;
+  color: #7a7368;
+}
+
+.item-info button {
+  padding: 4px 8px;
+  font-size: 13px;
+  background-color: #e8e3d9;
+  color: #2b2b2b;
+}
+
+.total {
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#carrinho button {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+#carrinho .item-info button {
+  width: auto;
+  margin-bottom: 0;
+}
+
+
+/* ---------- Elementos escondidos ---------- */
+
+.escondido {
+  display: none;
+}
+
+
+/* ---------- Rodape ---------- */
+
+footer {
+  padding: 24px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/* ---------- Telas menores ---------- */
+
+@media (max-width: 1000px) {
+  .produtos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 750px) {
+  .produtos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .produtos {
+    grid-template-columns: 1fr;
+  }
+
+  #carrinho {
+    width: 100%;
+  }
+}
